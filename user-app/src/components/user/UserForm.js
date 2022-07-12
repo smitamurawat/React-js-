@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+
 function UserForm(props)
 {
     const[name,SetuserName]= useState('');
@@ -21,7 +22,7 @@ function UserForm(props)
     
     };
     return(
-        <div>
+       
             <form  onSubmit={FormHandler}>
                 <div>
                     <label>UserName</label>
@@ -35,7 +36,7 @@ function UserForm(props)
                     <button type="submit">Add User</button>
                 </div>
             </form>
-        </div>
+        
     );
 
 }

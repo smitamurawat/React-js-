@@ -1,5 +1,7 @@
 import React from 'react';
+import Card from '../UI/Card'
 import UserForm from './UserForm';
+import classes from './AddUser.module.css';
 function AddUser(props)
 {
     const AddUserHandler=(data)=>{
@@ -8,9 +10,9 @@ function AddUser(props)
         props.getUserInfo(userArray);
         }
     return(
-        <div>
+        <Card className={classes.input}>
             <UserForm onSaveUserForm={AddUserHandler}></UserForm>
-        </div>
+        </Card>
     )
 
 }
